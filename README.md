@@ -19,17 +19,17 @@ To create a branch, type into your terminal `git branch name-of-your-branch` the
 
 
 ### Naming Conventions
-– Functions: Pascal case
-– Type Names: T prepended to Pascal case
-– Defines: Screaming snake case
-– StructNames: S prepended to Pascal case
-– Class Names: C prepended to Pascal case
-– Data Members: D prepended to Pascal case
-– EnumNames: E prepended to Pascal case
-– Enumerated Values: enumclasses with Pascal case
-– Local Variables: Pascal case
-– Global Variables: G prepended to Pascal case
-– Parameters: Lowercase
+- Functions: Pascal case
+- Type Names: T prepended to Pascal case
+- Defines: Screaming snake case
+- StructNames: S prepended to Pascal case
+- Class Names: C prepended to Pascal case
+- Data Members: D prepended to Pascal case
+- EnumNames: E prepended to Pascal case
+- Enumerated Values: enumclasses with Pascal case
+- Local Variables: Pascal case
+- Global Variables: G prepended to Pascal case
+- Parameters: Lowercase
 
 
 ### Authors (needs roles later)
