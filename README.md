@@ -28,7 +28,7 @@ Ben Larrissson: https://github.com/bllarrison
 
 Noah Grove: https://github.com/kuesa
 
-Shashank Shastry : (github needed)
+Shashank Shastry : https://github.com/greyhat36
 
 Vanessa Kha : https://github.com/vanessakha
 
