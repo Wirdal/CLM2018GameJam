@@ -1,0 +1,17 @@
+﻿<Properties StartupConfiguration="{890A2426-B12E-F5F3-07E0-444F3EF7A191}|">
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/playerHealth.cs">
+    <Files>
+      <File FileName="Assets/Cowboy_Player.cs" Line="15" Column="6" />
+      <File FileName="Assets/CowboyJump.cs" Line="2" Column="34" />
+      <File FileName="Assets/CameraSystem.cs" Line="15" Column="1" />
+      <File FileName="Assets/playerHealth.cs" Line="12" Column="25" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
