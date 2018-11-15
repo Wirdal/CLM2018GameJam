@@ -12,12 +12,13 @@ public class Cowboy_Player : MonoBehaviour {
     private bool facingRight = true;
     private float xDir;
     private bool existsNewJump;
-    
+    Animator myAnimator = null;
     Rigidbody2D obj;
 
     void Awake()
     {
         obj = gameObject.GetComponent<Rigidbody2D>();
+        myAnimator = gameObject.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -42,6 +43,13 @@ public class Cowboy_Player : MonoBehaviour {
             existsNewJump = true;
             isGrounded = false;
         }
+        if (Input.GetButton("Fire1")){
+            myAnimator.SetBool("shoot", true);
+        }
+        else{
+            myAnimator.SetBool("shoot", false);
+        }
+
         // DIRECTION
         if (xDir < 0.0f && facingRight){
             FlipPlayer();

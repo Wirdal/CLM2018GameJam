@@ -61,6 +61,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\AlienMove.cs" />
     <Compile Include="Assets\CameraSystem.cs" />
     <Compile Include="Assets\Cowboy_Player.cs" />
     <Compile Include="Assets\CowboyJump.cs" />
