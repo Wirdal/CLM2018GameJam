@@ -4,25 +4,25 @@ using UnityEngine;
 
 public class CameraSystem : MonoBehaviour {
 
-    private GameObject player;
+    private GameObject Player;
 
     // BOUNDS
-    public float xMin;
-    public float xMax;
-    public float yMin;
-    public float yMax;
+    public float XMin;
+    public float XMax;
+    public float YMin;
+    public float YMax;
 
 
 	// Use this for initialization
 	void Start () {
-        player = GameObject.FindGameObjectWithTag("cowboy");
+        Player = GameObject.FindGameObjectWithTag("cowboy");
 
 	}
 	
 	// Update is called once per frame
 	void LateUpdate () {
-        float x = Mathf.Clamp(player.transform.position.x, xMin, xMax);
-        float y = Mathf.Clamp(player.transform.position.y, yMin, yMax);
-        gameObject.transform.position = new Vector3(x, y, gameObject.transform.position.z);
+        float X = Mathf.Clamp(Player.transform.position.x, XMin, XMax);
+        float Y = Mathf.Clamp(Player.transform.position.y, YMin, YMax);
+        gameObject.transform.position = new Vector3(X, Y, gameObject.transform.position.z);
 	}
 }
