@@ -6,6 +6,7 @@ public class CowboyPlayer : MonoBehaviour {
 
     public float JumpVel = 7f;
     public int PlayerSpeed = 5;
+    public bool CanMove = true;
 
     public bool IsGrounded;
 
@@ -33,17 +34,21 @@ public class CowboyPlayer : MonoBehaviour {
             ExistsNewJump = false;
         }
 
-        Obj.velocity = new Vector2(XDir * PlayerSpeed, GetComponent<Rigidbody2D>().velocity.y);
+        if (CanMove){
+            Obj.velocity = new Vector2(XDir * PlayerSpeed, GetComponent<Rigidbody2D>().velocity.y);
+        }
+
     }
 
     void Player_Move(){
         // CONTROLS
         XDir = Input.GetAxis("Horizontal");
-        if (Input.GetButtonDown("Jump") && IsGrounded){
+        if (Input.GetButtonDown("Jump") && IsGrounded && CanMove){
             ExistsNewJump = true;
             IsGrounded = false;
         }
-        if (Input.GetButton("Fire1")){
+        if (Input.GetButton("Fire1") && CanMove)
+        {
             MyAnimator.SetBool("shoot", true);
         }
         else{
@@ -51,10 +56,11 @@ public class CowboyPlayer : MonoBehaviour {
         }
 
         // DIRECTION
-        if (XDir < 0.0f && FacingRight){
+        if (XDir < 0.0f && FacingRight && CanMove){
             FlipPlayer();
         }
-        else if (XDir > 0.0f && !FacingRight){
+        else if (XDir > 0.0f && !FacingRight && CanMove)
+        {
             FlipPlayer();
         }
 

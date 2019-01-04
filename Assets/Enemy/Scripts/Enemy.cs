@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour {
 
+    public int HitCounter = 0;
     public Animator Animator = null;
 
 	// Use this for initialization
@@ -17,6 +18,7 @@ public class Enemy : MonoBehaviour {
 	}
 
     public void TakeDamage(int Dmg){
+
         gameObject.GetComponent<EnemyHealth>().Hp -= Dmg;
     }
 }

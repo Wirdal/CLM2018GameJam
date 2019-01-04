@@ -21,11 +21,11 @@ GameObject:
   - component: {fileID: 4819350514730142}
   - component: {fileID: 212876113514230602}
   - component: {fileID: 50946839128568252}
-  - component: {fileID: 61942126110397768}
   - component: {fileID: 114335841876282070}
-  m_Layer: 0
+  - component: {fileID: 61942126110397768}
+  m_Layer: 9
   m_Name: bullet
-  m_TagString: Untagged
+  m_TagString: bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

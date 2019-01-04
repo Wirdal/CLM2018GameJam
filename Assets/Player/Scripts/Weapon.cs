@@ -7,6 +7,7 @@ public class Weapon : MonoBehaviour {
     public Transform Firepoint;
     public GameObject BulletPrefab;
     public int Dmg;
+    public CowboyPlayer Player; // may be more generic in the future
 
     private void Start()
     {
@@ -20,6 +21,8 @@ public class Weapon : MonoBehaviour {
 	}
 
     void Shoot(){
-        Instantiate(BulletPrefab, Firepoint.position, Firepoint.rotation);
+        if (Player.CanMove){
+            Instantiate(BulletPrefab, Firepoint.position, Firepoint.rotation);
+        }
     }
 }

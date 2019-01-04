@@ -10,14 +10,18 @@ public class Bullet : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+
         Rb.velocity = transform.right * Speed;
 		
 	}
 	
     void OnTriggerEnter2D(Collider2D hitInfo){
-        Enemy enemy = hitInfo.GetComponent<Enemy>();
-        if (enemy != null){
-            enemy.TakeDamage(Dmg);
+        
+        Enemy EnemyPlayer = hitInfo.GetComponent<Enemy>();
+        EnemyPlayer.HitCounter++;
+        Debug.Log("Hit Counter is" + EnemyPlayer.HitCounter);
+        if (EnemyPlayer != null){
+            EnemyPlayer.TakeDamage(Dmg);
         }
         Destroy(gameObject);
     }
